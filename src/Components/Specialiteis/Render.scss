@@ -1,0 +1,30 @@
+.render {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .spec {
+    min-width: 25vw;
+    
+  }
+  
+  .liveastro {
+    margin-top: 20px;
+  }
+  
+  .liveastro h1 {
+    // font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .singleastrodiv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 62px;
+    margin-left: 20px;
+  }
+  
