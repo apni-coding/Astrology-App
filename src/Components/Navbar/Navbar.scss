@@ -1,70 +1,98 @@
-.navbar {
+.head {
+  border-bottom: 1px solid #d8d8d8;
 
+  .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     font-size: 18px;
-    color: #222;;
-  }
-  
-  .navleft {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo {
-    margin-right: 20px;
-  
-    img {
-      height: 40px;
-      width: auto;
-    }
-  }
-  
-  .sitename {
-    margin-right: 20px;
-    font-size: 18px;
-  
-    a {
-      color: #333;
-      text-decoration: none;
-    }
-  }
-  
-  .navright {
-    display: flex;
-    align-items: center;
-  }
-  
-  .select-wrapper {
-    margin-right: 20px;
-  
-    select {
-      padding: 5px;
-      font-size: 14px;
-      border: none;
-      background-color: transparent;
-      color: #333;
-  
-      option {
-        background-color: #f2f2f2;
+    max-width: 1128px;
+    margin: 0 auto;
+
+    .navleft {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-grow: 1;
+      /* Distribute equal space between the links */
+
+      .logo {
+        
+
+        img {
+          height: 50px;
+          width: auto;
+        }
+      }
+
+      .sitename {
+        margin-right: 20px;
+        font-size: 18px;
+
+        a {
+          color: #333;
+          text-decoration: none;
+        }
       }
     }
+
+    .navright {
+      display: flex;
+      align-items: center;
+      margin: 0 10px 0 20vw;
+    }
+
+    .select-wrapper {
+      margin-right: 20px;
+      border: 1px solid #e0e0e0;
+      box-sizing: border-box;
+      border-radius: 8px;
+      height: 40px;
+      cursor: pointer;
+      padding: 0 12px;
+      color: #222;
+      font-size: 18px;
+      &:hover{
+        background-color: #222;
+        color: #fff;
+      }
+
+      select {
+        padding: 5px;
+        font-size: 18px;
+        border: none;
+        background-color: transparent;
+        color: #333;
+
+
+        option {
+          background-color: #f2f2f2;
+        }
+      }
+    }
+
+    .signinbtn {
+      background: linear-gradient(180deg,#6b17ff 0%,#7f11f6 100%);
+      border-radius: 8px;
+      color: #fff;
+      cursor: pointer;
+      overflow: hidden;
+      border: none;
+      height: 40px;
+      padding: 5px ;
+      font-size: 18px;
+      &:hover{
+        
+    background: linear-gradient(0deg,rgba(255,255,255,.3),rgba(255,255,255,.3)),linear-gradient(180deg,#6b17ff 0%,#7f11f6 100%);
+    opacity: 0.8;
+      }
+    }
+
+    
   }
-  
-  .signinbtn {
-    padding: 8px 16px;
-    font-size: 14px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .hr {
-    border: none;
-    border-top: 1px solid #ddd;
-    margin: 20px 0;
-  }
-  
+}
+
+a{
+  text-decoration: none;
+}

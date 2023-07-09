@@ -1,0 +1,17 @@
+/* Astrolist.scss */
+h1{
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+.astrolist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .astrolist .singleastro:nth-child(even) {
+    margin-top: 40px;
+  }
+ 
+  
+  

@@ -1,13 +1,15 @@
 import React from 'react'
 import "./Navbar.scss"
+import logo from "../../Assests/Images/Guruji-Logo-1.png"
 
 export default function Navbar() {
     return (
         <>
+            <div className="head">
             <nav className="navbar">
                 <div className="navleft">
                     <div className="logo">
-                        <a href=""><img src="" alt="" /></a>
+                        <a href=""><img src={logo} alt="" /></a>
                     </div>
 
                     <div className="sitename">
@@ -31,7 +33,7 @@ export default function Navbar() {
                     </div>
                 </div>
                 <div class="navright">
-                    <select id="languageDropdown">
+                    <select id="languageDropdown" className='select-wrapper'>
                         <option value="en">English</option>
                         <option value="hi">Hindi</option>
                     </select>
@@ -39,12 +41,10 @@ export default function Navbar() {
                 </div>
 
             </nav>
+            </div>
 
 
 
-
-
-            <hr />
         </>
     )
 }
