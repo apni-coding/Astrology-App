@@ -1,0 +1,150 @@
+
+@font-face {
+    font-family:'ElMessiri';
+    src: url('../../Fonts/Messiri/static/ElMessiri-Regular.ttf');
+}
+
+.banner {
+    background: url("../../Assests/Images/banner-bg.webp") no-repeat;
+    background-size: cover;
+    height: 450px;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+
+    .swiper {
+        width: 60%;
+        height: 80%;
+        margin-right: auto;
+        margin-left: 20px;
+        border-radius: 15px;
+        overflow: hidden;
+        position: relative;
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 15px;
+            }
+        }
+
+        .swiper-pagination-bullet {
+            background-color: #bf57ea;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin: 8px;
+
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: #bf57ea;
+        }
+    }
+
+    .bannerright {
+        flex-grow: 1;
+        color: black;
+        padding: 0 20px;
+        margin-left: 20px;
+        margin-right: auto;
+        margin-top: 60px;
+
+        .bannertoptxt {
+            p {
+                font-size: 30px;
+                font-weight: 400;
+                font-family: ElMessiri;
+                line-height: 1;
+                margin-bottom: 10px;
+                
+            }
+
+            h2 {
+                font-size: 30px;
+                font-weight: 600;
+                font-family: ElMessiri;
+                line-height: 1.30;
+                margin-right: 15%;
+                // margin-bottom: 20px;
+            }
+        }
+
+        .bannermid{
+            p{
+                font-size: 18px;
+    // margin-bottom: 15px;
+    line-height: 1.6;
+    margin-right: 15%;
+    font-weight: 480;
+            }
+        }
+
+        .bannermidtxt {
+            margin-bottom: 5px;
+            display: flex;
+
+            .astrologersplus,
+            .todayusers,
+            .totalusers {
+                flex-grow: 1;
+                text-align: center;
+
+                h1 {
+                    font-size: 24px;
+                    font-weight: bold;
+                    margin-bottom: 5px;
+                    
+                }
+
+                p {
+                    font-size: 38px;
+                    font-weight: 600;
+                    font-family: ElMessiri, sans-serif;;
+                    line-height: 1.25;
+                    margin-bottom: 10px;
+                    color: #bf57ea;
+                }
+            }
+
+            .astrologersplus {
+                border-right: 1px solid rgba(255, 255, 255, 0.8);
+            }
+
+            .totalusers {
+                border-left: 1px solid rgba(255, 255, 255, 0.8);
+            }
+
+           
+        }
+        .bottombtn {
+            text-align: center;
+            
+            button {
+                background-image: url("../../Assests/Images/btnbg.png");
+                background-size: 100% 100%;
+                padding: 10px 35px;
+                color: #fff;
+                font-size: 18px;
+                font-weight: 700;
+                display: inline-block;
+                border: none;
+                margin-bottom: 40px;
+                &:hover{
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
