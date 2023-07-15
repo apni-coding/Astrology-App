@@ -1,0 +1,59 @@
+.horoscope {
+    text-align: center;
+   
+  
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+  
+    .circlemain {
+      display: flex;
+      justify-content: space-between;
+     flex-wrap: wrap;
+      margin-left: 8%;
+      margin-right: 8%;
+      
+  
+      .circle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 25px 40px 0;
+        flex-wrap: wrap;
+        cursor: pointer;
+       
+       
+  
+        img {
+            max-width: 100px;
+            margin: 0 auto;
+            width: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+            transition: background-color 0.3s, opacity 0.3s; /* Add transition for smooth effect */
+          }
+          
+          img:hover {
+            opacity: 0.5;
+            background-color: rgba(191,87,234, 0.5); /* Set the desired background color with opacity */
+          }
+          
+  
+        h4 {
+          font-size: 18px;
+          font-weight: bold;
+          margin-bottom: 5px;
+        }
+  
+        p {
+          font-size: 14px;
+          color: gray;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  
